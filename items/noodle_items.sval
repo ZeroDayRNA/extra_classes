@@ -1,0 +1,27 @@
+<loader>AddItemFile</loader>
+<dict>
+<dict name="test-item">
+        <string name="name">.item.test-item.name</string>
+        <string name="desc">.item.test-item.desc?health=25&mana=30</string>
+        <string name="quality">uncommon</string>
+        <int name="cost">800</int>
+
+        <bool name="has-blueprints">true</bool>
+
+        <array name="icon">
+            <string>items/noodle_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::Stats</string>
+                <int name="health">25</int>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::Stats</string>
+                <int name="mana">30</int>
+            </dict>
+        </array>
+    </dict>
+    </dict>
