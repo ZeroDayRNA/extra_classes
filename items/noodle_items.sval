@@ -1,10 +1,10 @@
 <loader>AddItemFile</loader>
 <dict>
-<dict name="test-item">
-        <string name="name">.item.test-item.name</string>
-        <string name="desc">.item.test-item.desc?health=25&mana=30</string>
-        <string name="quality">uncommon</string>
-        <int name="cost">800</int>
+<dict name="attack-speed">
+        <string name="name">Soldier's Syringe</string>
+        <string name="desc">Increaes Attack Speed by 7.5%</string>
+        <string name="quality">common</string>
+        <int name="cost">250</int>
 
         <bool name="has-blueprints">true</bool>
 
@@ -15,13 +15,10 @@
 
         <array name="modifiers">
             <dict>
-                <string name="class">Modifiers::Stats</string>
-                <int name="health">25</int>
+                <string name="class">Modifiers::Speed</string>
+                <float name="attack-mul">1.075</float>
             </dict>
-            <dict>
-                <string name="class">Modifiers::Stats</string>
-                <int name="mana">30</int>
-            </dict>
+
         </array>
     </dict>
     </dict>
