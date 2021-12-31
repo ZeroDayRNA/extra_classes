@@ -1,6 +1,6 @@
 <loader>AddItemFile</loader>
 <dict>
-<dict name="attack-speed">
+    <dict name="attack-speed">
         <string name="name">Soldier's Syringe</string>
         <string name="desc">Increaes Attack Speed by 7.5%</string>
         <string name="quality">common</string>
@@ -21,9 +21,6 @@
 
         </array>
     </dict>
-    </dict>
-    
-    <dict>
     <dict name="shaped-glass">
         <string name="name">Shaped Glass</string>
         <string name="desc">Doubles damage, halves health</string>
@@ -49,5 +46,4 @@
             </dict>
         </array>
     </dict>
-    </dict>
-    
+</dict>
