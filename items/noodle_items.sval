@@ -22,3 +22,32 @@
         </array>
     </dict>
     </dict>
+    
+    <dict>
+    <dict name="shaped-glass">
+        <string name="name">Shaped Glass</string>
+        <string name="desc">Doubles damage, halves health</string>
+        <string name="quality">rare</string>
+        <int name="cost">1000</int>
+
+        <bool name="has-blueprints">false</bool>
+
+        <array name="icon">
+            <string>items/noodle_items.png</string>
+            <int>100</int><vec4>0 0 12 12</vec4>
+        </array>
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::MaxHealth</string>
+                <float name="mul">0.5</float>
+            </dict>
+        </array>
+        <array name="modifiers">
+            <dict>
+                <string name="class">Modifiers::Attack</string>
+                <float name="attack-mul">2.0</float>
+            </dict>
+        </array>
+    </dict>
+    </dict>
+    
