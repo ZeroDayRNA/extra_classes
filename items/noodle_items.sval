@@ -38,11 +38,9 @@
                 <string name="class">Modifiers::MaxHealth</string>
                 <float name="mul">0.5</float>
             </dict>
-        </array>
-        <array name="modifiers">
             <dict>
-                <string name="class">Modifiers::Attack</string>
-                <float name="attack-mul">2.0</float>
+                <string name="class">Modifiers::Damage</string>
+                <float name="mul">2.0</float>
             </dict>
         </array>
     </dict>
