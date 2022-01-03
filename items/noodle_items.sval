@@ -24,7 +24,7 @@
     <dict name="shaped-glass">
         <string name="name">Shaped Glass</string>
         <string name="desc">Doubles damage, halves health</string>
-        <string name="quality">rare</string>
+        <string name="quality">epic</string>
         <int name="cost">1000</int>
 
         <bool name="has-blueprints">false</bool>
@@ -44,4 +44,28 @@
             </dict>
         </array>
     </dict>
+        <dict name="cursed-spellblade">
+            <string name="name">Cursed Spellblade</string>
+            <string name="desc">Kills reduces skill cooldowns, the price of power</string>
+            <string name="quality">legendary</string>
+            <int name="cost">10000</int>
+
+            <bool name="has-blueprints">false</bool>
+
+            <array name="icon">
+                <string>items/noodle_items.png</string>
+                <int>100</int><vec4>0 0 12 12</vec4>
+            </array>
+            <array name="modifiers">
+                <dict>
+                    <string name="class">Modifiers::Speed</string>
+                    <float name="skill-mul">2</float>
+                </dict>
+                <dict>
+                    <string name="class">Modifiers::Speed</string>
+                    <float name="movement-mul">0.25</float>
+                </dict>
+            </array>
+        </dict>
+
 </dict>
