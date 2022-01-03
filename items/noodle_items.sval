@@ -45,7 +45,7 @@
         </array>
     </dict>
         <dict name="cursed-spellblade">
-            <string name="name">Cursed Spellblade</string>
+            <string name="name">Rite of the Berserker</string>
             <string name="desc">Kills reduces skill cooldowns, the price of power</string>
             <string name="quality">legendary</string>
             <int name="cost">10000</int>
@@ -67,5 +67,4 @@
                 </dict>
             </array>
         </dict>
-
 </dict>
