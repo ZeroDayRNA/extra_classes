@@ -40,13 +40,23 @@
             </dict>
             <dict>
                 <string name="class">Modifiers::Damage</string>
-                <float name="mul">2.0</float>
+                <float name="mul">2</float>
+            </dict>
+            <dict name="modifier">
+                <string name="class">Modifiers::Trigger</string>
+                <string name="trigger">kill</string>
+                <float name="chance">1</float>
+                <bool name="target-self">true</bool>
+                <dict>
+                    <string name="class">Modifier::stats</string>
+                    <int name="health">1</int>
+                </dict>
             </dict>
         </array>
     </dict>
         <dict name="cursed-spellblade">
-            <string name="name">Rite of the Berserker</string>
-            <string name="desc">Kills reduces skill cooldowns, the price of power</string>
+            <string name="name">Enigmatic Spellbook</string>
+            <string name="desc">Greatly reduces skill cooldowns</string>
             <string name="quality">legendary</string>
             <int name="cost">10000</int>
 
