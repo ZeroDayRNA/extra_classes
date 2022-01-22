@@ -21,10 +21,10 @@
 
         </array>
     </dict>
-    <dict name="shaped-glass">
-        <string name="name">Shaped Glass</string>
-        <string name="desc">Doubles damage, halves health</string>
-        <string name="quality">epic</string>
+    <dict name="c-mask">
+        <string name="name">Mask of the Cultist</string>
+        <string name="desc">Demented Power</string>
+        <string name="quality">rare</string>
         <int name="cost">1000</int>
 
         <bool name="has-blueprints">false</bool>
@@ -43,13 +43,23 @@
                 <float name="mul">2</float>
             </dict>
             <dict name="modifier">
-                <string name="class">Modifiers::Trigger</string>
-                <string name="trigger">kill</string>
+                <string name="class">Modifiers::TriggerEffect</string>
+                <string name="trigger">hit</string>
+                <float name="chance">0.05</float>
+                <bool name="target-self">true</bool>
+                <dict name="effect">
+                    <string name="class">ApplyBuff</string>
+                    <string name="buff">items/buffs.sval:poison</string>
+                </dict>
+            </dict>
+            <dict>
+                <string name="class">Modifiers::TriggerEffect</string>
+                <string name="trigger">hit</string>
                 <float name="chance">1</float>
                 <bool name="target-self">true</bool>
-                <dict>
-                    <string name="class">Modifier::stats</string>
-                    <int name="health">1</int>
+                <dict name="effect">
+                    <string name="class">Heal</string>
+                    <int name="heal">5</int>
                 </dict>
             </dict>
         </array>
@@ -57,8 +67,8 @@
         <dict name="cursed-spellblade">
             <string name="name">Enigmatic Spellbook</string>
             <string name="desc">Greatly reduces skill cooldowns</string>
-            <string name="quality">legendary</string>
-            <int name="cost">10000</int>
+            <string name="quality">rare</string>
+            <int name="cost">1000</int>
 
             <bool name="has-blueprints">false</bool>
 
@@ -72,9 +82,21 @@
                     <float name="skill-mul">2</float>
                 </dict>
                 <dict>
-                    <string name="class">Modifiers::Speed</string>
-                    <float name="movement-mul">0.25</float>
+                    <string name="class">Modifiers::StatsBase</string>
+                    <float name="mana">1.5</float>
                 </dict>
+                <dict>
+                    <string name="class">Modifiers::TriggerEffect</string>
+                    <string name="trigger">castspell</string>
+                    <float name="chance">1</float>
+                    <bool name="target-self">true</bool>
+                    <dict name="effect">
+                        <string name="class">Damage</string>
+                        <int name="magical">7</int>
+                        <bool name="can-kill">true</bool>
+                        <bool name="true-strike">true</bool>
+                    </dict>
+                </dict> 
             </array>
         </dict>
 </dict>
